@@ -6,13 +6,20 @@
     <!-- Add styles Bootstrap -->
     <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
     <!-- My Style Css -->
-     <link rel="stylesheet" href="./assets/css/mystyle.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/mystyle.css" />
+    <title>Bootstrap</title>
   </head>
   <body>
-    <nav class="navbar btp navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./assets/img/logo-tuhoc-light.png"
+            alt="Logo"
+            class="d-inline-block align-text-top"
+          />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -25,52 +32,91 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Menu Item -->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
+              <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              <a class="nav-link" href="#">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
             </li>
           </ul>
+          <!-- Action -->
+          <div class="me-1 mb-2 mb-lg-0 d-flex flex-column gap-1 flex-md-row">
+            <a
+              href="#!"
+              class="btn btn-danger d-xl-inline-flex justify-content-center align-items-center text-nowrap"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                width="16px"
+                heigh="16px"
+                class="me-2"
+              >
+                <path
+                  fill="#ffffff"
+                  d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"
+                />
+              </svg>
+              Sign Up
+            </a>
+            <a
+              href="#!"
+              class="btn btn-warning d-inline-flex justify-content-center align-items-center text-white"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                width="16px"
+                heigh="16px"
+                class="me-2"
+              >
+                <path
+                  fill="#ffffff"
+                  d="M217.9 105.9L340.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L217.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1L32 320c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM352 416l64 0c17.7 0 32-14.3 32-32l0-256c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0c53 0 96 43 96 96l0 256c0 53-43 96-96 96l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32z"
+                />
+              </svg>
+              Login
+            </a>
+          </div>
+          <!-- Search -->
           <form class="d-flex" role="search">
             <input
               class="form-control me-2"
               type="search"
-              placeholder="Search"
+              placeholder="Search for..."
               aria-label="Search"
             />
-            <button class="btn btn-outline-success" type="submit">
-              Search
+            <button class="btn btn-outline-success search-btn" type="submit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                width="16px"
+                heigh="16px"
+                class="search-icon"
+              >
+                <path
+                  d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                />
+              </svg>
             </button>
           </form>
         </div>
       </div>
     </nav>
-
-    
 
     <!-- Add JS Bootstrap -->
     <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>

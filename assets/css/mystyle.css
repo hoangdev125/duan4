@@ -1,0 +1,14 @@
+.navbar-brand img {
+  width: 130px;
+}
+
+ .search-icon path {
+    fill: #198754; /* màu mặc định */
+    transition: fill 0.2s;
+  }
+
+.search-btn:hover .search-icon path{
+    color: #fff;
+    fill: #fff;
+}
+
