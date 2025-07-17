@@ -2,13 +2,23 @@
   width: 130px;
 }
 
- .search-icon path {
-    fill: #198754; /* màu mặc định */
-    transition: fill 0.2s;
-  }
-
-.search-btn:hover .search-icon path{
-    color: #fff;
-    fill: #fff;
+.search-icon path {
+  fill: #198754; /* màu mặc định */
+  transition: fill 0.2s;
 }
 
+.search-btn:hover .search-icon path {
+  color: #fff;
+  fill: #fff;
+}
+
+.fearture__item img {
+  width: 50px;
+  height: auto;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
