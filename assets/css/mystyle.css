@@ -22,3 +22,13 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.main-header{
+  padding-top: 100px;
+}
+
+.subscribe{
+  background-image: url(/assets/img/subscribe.jpg);
+  background-size: cover;
+  background-position: center;
+}
