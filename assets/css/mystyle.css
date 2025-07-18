@@ -28,7 +28,10 @@
 }
 
 .subscribe{
-  background-image: url(/assets/img/subscribe.jpg);
-  background-size: cover;
-  background-position: center;
+  background-color: #273447;
+}
+
+.blur-filter{
+  backdrop-filter: blur(8px);
+  background-color: #cccccc57;
 }

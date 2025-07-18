@@ -38,15 +38,13 @@
           <!-- Menu Item -->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="courses.html">Courses</a>
+              <a class="nav-link active" href="courses.html">Courses</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="faq.html">FAQ</a>
@@ -124,7 +122,7 @@
     </nav>
 
     <!-- Header -->
-    <header class="main-header pb-4 border-bottom">
+    <header class="main-header pb-5 border-bottom">
       <div class="container">
         <div class="row align-items-center gx-md-5">
           <div class="col-md-6">
@@ -137,21 +135,27 @@
               Consectetur, debitis mollitia laudantium tenetur, tempora
               obcaecati provident voluptatum
             </p>
-            <a href="#!" class="btn btn-success mb-2 mb-md-0 text-nowrap">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 640 512"
-                width="16px"
-                height="16px"
-                class="me-2"
-              >
-                <path
-                  fill="#ffffff"
-                  d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM504 312l0-64-64 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l64 0 0-64c0-13.3 10.7-24 24-24s24 10.7 24 24l0 64 64 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-64 0 0 64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"
-                />
-              </svg>
-              Sign Up to Get Started
-            </a>
+            <form class="d-flex w-75" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search for..."
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success search-btn" type="submit">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  width="16px"
+                  height="16px"
+                  class="search-icon"
+                >
+                  <path
+                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                  />
+                </svg>
+              </button>
+            </form>
           </div>
 
           <div class="col-md-6">
@@ -168,94 +172,9 @@
       </div>
     </header>
 
-    <!-- Site Feature -->
-    <section class="py-4 border-bottom">
-      <div class="container">
-        <div class="row gap-3">
-          <div class="col-md">
-            <div
-              class="fearture__item border rounded p-3 d-flex align-items-center"
-            >
-              <div>
-                <img loading="lazy" src="./assets/img/clock.png" alt="" />
-              </div>
-              <div class="ms-3">
-                <h3 class="fs-5">Lorem ipsum dolor sit amet</h3>
-                <p class="small text-secondary my-auto">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Facere officiis modi similique nihil
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md">
-            <div
-              class="fearture__item border rounded p-3 d-flex align-items-center"
-            >
-              <div>
-                <img loading="lazy" src="./assets/img/tick.png" alt="" />
-              </div>
-              <div class="ms-3">
-                <h3 class="fs-5">Lorem ipsum dolor sit amet</h3>
-                <p class="small text-secondary my-auto">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Facere officiis modi similique nihil
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md">
-            <div
-              class="fearture__item border rounded p-3 d-flex align-items-center"
-            >
-              <div>
-                <img loading="lazy" src="./assets/img/responsive.png" alt="" />
-              </div>
-              <div class="ms-3">
-                <h3 class="fs-5">Lorem ipsum dolor sit amet</h3>
-                <p class="small text-secondary my-auto">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Facere officiis modi similique nihil
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Course -->
-    <section class="py-4 border-bottom">
+    <section class="py-4 mb-4">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-5 text-md-center">
-            <h4 class="fs-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-              dolorem voluptatum. Temporibus amet mollitia
-            </h4>
-            <p class="small text-secondary">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-              commodi quas adipisci quod? Similique, eligendi illum? Eum modi
-              rem dolorem minus nisi dolore ullam!
-            </p>
-            <a href="#!" class="btn btn-success text-nowrap">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 640 512"
-                width="20px"
-                height="20px"
-                class="me-1"
-              >
-                <path
-                  fill="#ffffff"
-                  d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9l0 28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5l0-24.6c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"
-                />
-              </svg>
-              View all courses
-            </a>
-          </div>
-        </div>
-
         <div class="row mt-4">
           <div class="col-md-3">
             <div class="list-group mb-3">
@@ -611,58 +530,6 @@
                   </div>
                 </div>
               </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Other Content -->
-    <section class="py-4 border-bottom">
-      <div class="container">
-        <div class="row align-items-center gx-md-5">
-          <div class="col-md-6">
-            <h2 class="fs-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              alias nulla minus sunt similique
-            </h2>
-            <p class="small text-secondary">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Consectetur, debitis mollitia laudantium tenetur, tempora
-              obcaecati provident voluptatum
-            </p>
-            <h2 class="fs-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </h2>
-            <p class="small text-secondary">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Consectetur, debitis mollitia laudantium tenetur.
-            </p>
-            <a href="#!" class="btn btn-success mb-2 mb-md-0 text-nowrap">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 640 512"
-                width="16px"
-                height="16px"
-                class="me-2"
-              >
-                <path
-                  fill="#ffffff"
-                  d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM504 312l0-64-64 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l64 0 0-64c0-13.3 10.7-24 24-24s24 10.7 24 24l0 64 64 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-64 0 0 64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"
-                />
-              </svg>
-              Sign Up to Get Started
-            </a>
-          </div>
-
-          <div class="col-md-6">
-            <div>
-              <img
-                loading="lazy"
-                class="rounded w-100 img-fluid"
-                src="./assets/img/main-header.jpg"
-                alt=""
-              />
             </div>
           </div>
         </div>
